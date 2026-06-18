@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saurabh Kumar Ojha - Aspiring Software Developer Portfolio. Experienced in Full Stack Java, Android development, and modern web technologies.">
+    <meta name="keywords" content="portfolio, developer, software engineer, full stack, Java, Android, web development, programming">
+    <meta name="author" content="Saurabh Kumar Ojha">
+    <title>Saurabh Kumar Ojha | Software Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">SKO</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-image-wrapper reveal-left">
+                    <div class="hero-image-container">
+                        <img src="https://avatars.githubusercontent.com/u/232231272?v=4" alt="Saurabh Kumar Ojha" class="hero-image">
+                        <div class="hero-image-border"></div>
+                    </div>
+                    <div class="hero-status">
+                        <span class="status-dot"></span>
+                        Available for hire
+                    </div>
+                </div>
+                <div class="hero-text reveal-right">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-name">Saurabh Kumar Ojha</h1>
+                    <div class="hero-title">
+                        <span class="hero-title-prefix">I'm a </span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Vibe Coder pursuing B.Tech in CSE with AIML. Aspiring Software Developer with internship experience in Full Stack Java and Android development.
+                        Passionate about building responsive web applications and scalable mobile solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/skojha007" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/skojha007" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/skojha007" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/skojha007/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="about-image-container">
+                        <img src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coding workspace" class="about-img">
+                        <div class="about-experience-badge glass">
+                            <span class="badge-number">1+</span>
+                            <span class="badge-text">Years of Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3 class="about-heading">Building Innovative Solutions with Dedication</h3>
+                    <p class="about-description">
+                        I'm a Vibe Coder and aspiring Software Developer with a strong foundation in Full Stack Java
+                        and Android development. Currently pursuing my B.Tech in Computer Science and Engineering with AIML,
+                        I've developed multiple responsive web applications and scalable Android apps.
+                    </p>
+                    <p class="about-description">
+                        My approach combines technical expertise with creative problem-solving.
+                        I'm passionate about learning new technologies and continuously improving my skills.
+                        I've completed internships where I gained hands-on experience in building
+                        practical software solutions and working collaboratively with teams.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item glass">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item glass">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">DSA Problems Solved</span>
+                        </div>
+                        <div class="stat-item glass">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="assets/resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">My Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category reveal-left">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4 class="skill-name">Java</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4 class="skill-name">JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="skill-name">TypeScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h4 class="skill-name">PHP</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fas fa-c-code"></i>
+                            </div>
+                            <h4 class="skill-name">C/C++</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="78"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4 class="skill-name">Python</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="72"></div>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category reveal-right">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Web & Mobile Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-angular"></i>
+                            </div>
+                            <h4 class="skill-name">Angular</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4 class="skill-name">Node.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <h4 class="skill-name">Android</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="82"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 class="skill-name">Oracle/SQL</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="78"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4 class="skill-name">HTML5/CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="92"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-card glass">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4 class="skill-name">jQuery</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="76"></div>
+                            </div>
+                            <span class="skill-percent">76%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tools-section reveal-up">
+                <h3 class="tools-title">Tools & Technologies</h3>
+                <div class="tools-grid">
+                    <div class="tool-tag glass">Git</div>
+                    <div class="tool-tag glass">GitHub</div>
+                    <div class="tool-tag glass">VS Code</div>
+                    <div class="tool-tag glass">IntelliJ IDEA</div>
+                    <div class="tool-tag glass">Android Studio</div>
+                    <div class="tool-tag glass">Spring Framework</div>
+                    <div class="tool-tag glass">JDBC</div>
+                    <div class="tool-tag glass">REST APIs</div>
+                    <div class="tool-tag glass">MySQL</div>
+                    <div class="tool-tag glass">Firebase</div>
+                    <div class="tool-tag glass">DSA</div>
+                    <div class="tool-tag glass">Problem Solving</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">My Recent Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-filter reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass reveal-up" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/39284/macbook-laptop-ipad-apple-39284.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Banking System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/skojha007" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Application</span>
+                        <h3 class="project-title">Banking System</h3>
+                        <p class="project-description">
+                            A comprehensive banking system with account management, transactions, and secure authentication built for CodeAlpha internship.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass reveal-up" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Android App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/skojha007" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Mobile App</span>
+                        <h3 class="project-title">Android Application</h3>
+                        <p class="project-description">
+                            Scalable Android application with intuitive UI, local database integration, and responsive design patterns.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Android SDK</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass reveal-up" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/skojha007" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">CodeAlpha Project</span>
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Responsive portfolio website showcasing skills and projects with smooth animations and modern design.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass reveal-up" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/skojha007" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Full Stack</span>
+                        <h3 class="project-title">Full Stack Java Application</h3>
+                        <p class="project-description">
+                            Enterprise-level web application built with Java, Spring Framework, and modern frontend technologies.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring</span>
+                            <span class="tag">JDBC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass reveal-up" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Responsive Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/skojha007" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3 class="project-title">Responsive Web Apps</h3>
+                        <p class="project-description">
+                            Collection of multiple responsive web applications using HTML, CSS, JavaScript, and modern frameworks.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass reveal-up" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600" alt="CodeAlpha Projects">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/skojha007" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Internship</span>
+                        <h3 class="project-title">CodeAlpha Internship Tasks</h3>
+                        <p class="project-description">
+                            Various programming tasks and projects completed during CodeAlpha internship demonstrating practical skills.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">My Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass reveal-up">
+                    <div class="service-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="service-title">Java Development</h3>
+                    <p class="service-description">
+                        Enterprise-level Java applications with Spring Framework, JDBC connectivity, and robust backend solutions.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Spring Framework</li>
+                        <li><i class="fas fa-check"></i> JDBC & Oracle</li>
+                        <li><i class="fas fa-check"></i> REST APIs</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Android Development</h3>
+                    <p class="service-description">
+                        Native Android applications with Java, responsive UIs, local database integration, and smooth user experiences.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Native Android</li>
+                        <li><i class="fas fa-check"></i> SQLite Database</li>
+                        <li><i class="fas fa-check"></i> Material Design</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Responsive web applications using HTML, CSS, JavaScript, Angular, Node.js with modern development practices.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Angular/Node.js</li>
+                        <li><i class="fas fa-check"></i> TypeScript</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Problem Solving</h3>
+                    <p class="service-description">
+                        Strong analytical skills with expertise in Data Structures and Algorithms, solving complex computational problems.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> DSA Expert</li>
+                        <li><i class="fas fa-check"></i> 100+ Problems</li>
+                        <li><i class="fas fa-check"></i> LeetCode</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="service-title">Database Design</h3>
+                    <p class="service-description">
+                        Database architecture and management with Oracle, MySQL, and SQL for efficient data storage solutions.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Oracle/MySQL</li>
+                        <li><i class="fas fa-check"></i> SQL Queries</li>
+                        <li><i class="fas fa-check"></i> Database Design</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass reveal-up">
+                    <div class="service-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="service-title">Full Stack Solutions</h3>
+                    <p class="service-description">
+                        Complete application development from frontend UI to backend APIs and database integration.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> End-to-End Dev</li>
+                        <li><i class="fas fa-check"></i> API Integration</li>
+                        <li><i class="fas fa-check"></i> Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline section" id="timeline">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Education & Experience</h2>
+            </div>
+            <div class="timeline-tabs reveal-up">
+                <button class="timeline-tab active" data-tab="experience">Experience</button>
+                <button class="timeline-tab" data-tab="education">Education</button>
+            </div>
+            <div class="timeline-content">
+                <div class="timeline-items experience active" id="experience">
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-date">CodeAlpha</span>
+                            <h3 class="timeline-title">Software Development Intern</h3>
+                            <h4 class="timeline-company">CodeAlpha Internship Program</h4>
+                            <p class="timeline-description">
+                                Completed various programming tasks and projects including banking system,
+                                portfolio website, and responsive web applications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-date">Current</span>
+                            <h3 class="timeline-title">Full Stack Java Developer</h3>
+                            <h4 class="timeline-company">Internship</h4>
+                            <p class="timeline-description">
+                                Developing scalable web applications using Java, Spring Framework, JDBC,
+                                and Oracle Database. Building responsive RESTful APIs and modern UIs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-date">Current</span>
+                            <h3 class="timeline-title">Android Developer</h3>
+                            <h4 class="timeline-company">Internship</h4>
+                            <p class="timeline-description">
+                                Building scalable Android applications with Java, implementing responsive UIs,
+                                and integrating local database solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-date">Ongoing</span>
+                            <h3 class="timeline-title">Open Source Contributor</h3>
+                            <h4 class="timeline-company">GitHub</h4>
+                            <p class="timeline-description">
+                                Actively contributing to open source projects, solving DSA problems,
+                                and improving programming skills through continuous learning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-items education" id="education">
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-date">Current</span>
+                            <h3 class="timeline-title">B.Tech Computer Science with AIML</h3>
+                            <h4 class="timeline-company">Computer Science & Engineering (AI & Machine Learning)</h4>
+                            <p class="timeline-description">
+                                Pursuing Bachelor's degree in Computer Science and Engineering with specialization in
+                                Artificial Intelligence & Machine Learning, software development, and modern technologies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-date">Certifications</span>
+                            <h3 class="timeline-title">Technical Certifications</h3>
+                            <h4 class="timeline-company">Various Platforms</h4>
+                            <p class="timeline-description">
+                                Completed relevant certifications in programming, web development,
+                                and software engineering from recognized platforms.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-date">Ongoing</span>
+                            <h3 class="timeline-title">DSA & Problem Solving</h3>
+                            <h4 class="timeline-company">LeetCode & Online Platforms</h4>
+                            <p class="timeline-description">
+                                Solved 100+ data structure and algorithm problems, consistently
+                                practicing to improve problem-solving skills and coding efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume section" id="resume">
+        <div class="container">
+            <div class="resume-content reveal-up">
+                <div class="resume-text">
+                    <h2 class="resume-title">Looking for Opportunities</h2>
+                    <p class="resume-description">
+                        I'm an aspiring software developer ready to contribute to innovative projects.
+                        View or download my comprehensive CV to learn more about my skills, education, internship experience,
+                        and projects including this portfolio website, banking system, Android apps, and more.
+                    </p>
+                </div>
+                <div class="resume-buttons">
+                    <a href="cv.html" class="btn btn-primary btn-large" target="_blank">
+                        <i class="fas fa-eye"></i>
+                        <span>View CV</span>
+                    </a>
+                    <a href="assets/resume.pdf" class="btn btn-secondary btn-large" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <h3 class="contact-heading">Let's Work Together</h3>
+                    <p class="contact-description">
+                        Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+                        Fill out the form or reach out through any of the channels below.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item glass">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:info.sko007@gmail.com" class="contact-value">info.sko007@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <span class="social-label">Follow Me</span>
+                        <div class="social-links">
+                            <a href="https://github.com/skojha007" target="_blank" rel="noopener noreferrer" class="social-link glass" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/skojha007" target="_blank" rel="noopener noreferrer" class="social-link glass" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/skojha007" target="_blank" rel="noopener noreferrer" class="social-link glass" aria-label="X (Twitter)">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/skojha007/" target="_blank" rel="noopener noreferrer" class="social-link glass" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container reveal-right">
+                    <form class="contact-form glass" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-text">SKO</span>
+                    </a>
+                    <p class="footer-tagline">Building innovative software solutions with dedication.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                            <li><a href="#services">UI/UX Design</a></li>
+                            <li><a href="#services">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Connect</h4>
+                        <div class="footer-social">
+                            <a href="https://github.com/skojha007" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/skojha007" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/skojha007" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/skojha007/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Saurabh Kumar Ojha. All rights reserved.</p>
+                <p class="footer-credit">Designed & Built with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

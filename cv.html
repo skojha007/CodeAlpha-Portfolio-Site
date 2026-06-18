@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saurabh Kumar Ojha - Software Developer CV/Resume">
+    <meta name="keywords" content="CV, Resume, Software Developer, Java, Android, Full Stack">
+    <meta name="author" content="Saurabh Kumar Ojha">
+    <title>CV - Saurabh Kumar Ojha | Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .cv-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .cv-controls a,
+        .cv-controls button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-back {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #fff;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .cv-paper {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            color: #1a1a2e;
+        }
+
+        .cv-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 50px 40px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cv-profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #00d4ff;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+
+        .cv-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cv-title {
+            font-size: 1.2rem;
+            color: #00d4ff;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .cv-contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.95rem;
+        }
+
+        .cv-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cv-contact-item i {
+            color: #00d4ff;
+            width: 20px;
+        }
+
+        .cv-contact-item a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .cv-contact-item a:hover {
+            color: #00d4ff;
+        }
+
+        .cv-body {
+            padding: 40px;
+        }
+
+        .cv-section {
+            margin-bottom: 35px;
+        }
+
+        .cv-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .cv-section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #00d4ff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cv-section-title i {
+            color: #00d4ff;
+            font-size: 1.2rem;
+        }
+
+        .cv-summary {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #00d4ff;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .cv-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .cv-skill-category {
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+        }
+
+        .cv-skill-category-title {
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .cv-skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .cv-skill-tag {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .cv-experience-item {
+            margin-bottom: 25px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            border-radius: 12px;
+            border-left: 4px solid #00d4ff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cv-experience-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cv-experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .cv-experience-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .cv-experience-date {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .cv-experience-company {
+            color: #0099cc;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .cv-experience-desc {
+            color: #495057;
+            font-size: 0.95rem;
+        }
+
+        .cv-experience-desc ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .cv-experience-desc li {
+            margin-bottom: 5px;
+        }
+
+        .cv-project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .cv-project-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cv-project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-project-title {
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cv-project-title i {
+            color: #00d4ff;
+        }
+
+        .cv-project-tech {
+            color: #0099cc;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .cv-project-desc {
+            color: #495057;
+            font-size: 0.9rem;
+        }
+
+        .cv-project-desc ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .cv-education-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #00d4ff;
+            margin-bottom: 15px;
+        }
+
+        .cv-education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cv-education-title {
+            font-weight: 600;
+            color: #1a1a2e;
+            font-size: 1.1rem;
+        }
+
+        .cv-education-institution {
+            color: #0099cc;
+            font-weight: 500;
+        }
+
+        .cv-education-details {
+            margin-top: 12px;
+            color: #495057;
+            font-size: 0.9rem;
+        }
+
+        .cv-education-details ul {
+            margin-left: 20px;
+        }
+
+        .cv-achievements-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .cv-achievement-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 15px 20px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+        }
+
+        .cv-achievement-item i {
+            color: #00d4ff;
+            font-size: 1.2rem;
+        }
+
+        .cv-languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .cv-language-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 12px 25px;
+            border-radius: 25px;
+            border: 1px solid #e9ecef;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cv-language-item i {
+            color: #00d4ff;
+        }
+
+        .cv-footer {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .cv-controls {
+                display: none;
+            }
+
+            .cv-container {
+                padding: 0;
+            }
+
+            .cv-paper {
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .cv-header {
+                border-radius: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cv-header {
+                padding: 30px 20px;
+            }
+
+            .cv-body {
+                padding: 25px;
+            }
+
+            .cv-name {
+                font-size: 2rem;
+            }
+
+            .cv-contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .cv-controls {
+                top: 10px;
+                right: 10px;
+                flex-direction: column;
+            }
+
+            .cv-project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cv-experience-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-controls">
+        <a href="index.html" class="btn-back">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+        </a>
+        <button onclick="window.print()" class="btn-download">
+            <i class="fas fa-download"></i>
+            Download CV
+        </button>
+    </div>
+
+    <div class="cv-container">
+        <div class="cv-paper">
+            <header class="cv-header">
+                <img src="https://avatars.githubusercontent.com/u/232231272?v=4" alt="Saurabh Kumar Ojha" class="cv-profile-img">
+                <h1 class="cv-name">Saurabh Kumar Ojha</h1>
+                <p class="cv-title">Vibe Coder | Software Developer</p>
+                <div class="cv-contact-info">
+                    <div class="cv-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info.sko007@gmail.com">info.sko007@gmail.com</a>
+                    </div>
+                    <div class="cv-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>India</span>
+                    </div>
+                    <div class="cv-contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/skojha007" target="_blank">linkedin.com/in/skojha007</a>
+                    </div>
+                    <div class="cv-contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/skojha007" target="_blank">github.com/skojha007</a>
+                    </div>
+                    <div class="cv-contact-item">
+                        <i class="fab fa-x-twitter"></i>
+                        <a href="https://x.com/skojha007" target="_blank">x.com/skojha007</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="cv-body">
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-user"></i>
+                        Professional Summary
+                    </h2>
+                    <div class="cv-summary">
+                        Vibe Coder and aspiring Software Developer pursuing B.Tech in CSE with AIML. Experienced in Full Stack Java and Android development. Skilled in multiple programming languages including Java, JavaScript, TypeScript, PHP, Angular, Node.js, C/C++, and Python. Developed multiple responsive web applications and scalable Android apps with strong problem-solving abilities. Demonstrated excellence through 100+ DSA problems solved and successful completion of internship projects.
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-code"></i>
+                        Technical Skills
+                    </h2>
+                    <div class="cv-skills-grid">
+                        <div class="cv-skill-category">
+                            <h3 class="cv-skill-category-title">Programming Languages</h3>
+                            <div class="cv-skill-tags">
+                                <span class="cv-skill-tag">Java</span>
+                                <span class="cv-skill-tag">JavaScript</span>
+                                <span class="cv-skill-tag">TypeScript</span>
+                                <span class="cv-skill-tag">PHP</span>
+                                <span class="cv-skill-tag">C/C++</span>
+                                <span class="cv-skill-tag">Python</span>
+                            </div>
+                        </div>
+                        <div class="cv-skill-category">
+                            <h3 class="cv-skill-category-title">Web Development</h3>
+                            <div class="cv-skill-tags">
+                                <span class="cv-skill-tag">HTML5</span>
+                                <span class="cv-skill-tag">CSS3</span>
+                                <span class="cv-skill-tag">Angular</span>
+                                <span class="cv-skill-tag">Node.js</span>
+                                <span class="cv-skill-tag">jQuery</span>
+                                <span class="cv-skill-tag">REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="cv-skill-category">
+                            <h3 class="cv-skill-category-title">Mobile Development</h3>
+                            <div class="cv-skill-tags">
+                                <span class="cv-skill-tag">Android SDK</span>
+                                <span class="cv-skill-tag">Java</span>
+                                <span class="cv-skill-tag">SQLite</span>
+                                <span class="cv-skill-tag">Material Design</span>
+                            </div>
+                        </div>
+                        <div class="cv-skill-category">
+                            <h3 class="cv-skill-category-title">Databases & Tools</h3>
+                            <div class="cv-skill-tags">
+                                <span class="cv-skill-tag">Oracle</span>
+                                <span class="cv-skill-tag">MySQL</span>
+                                <span class="cv-skill-tag">Firebase</span>
+                                <span class="cv-skill-tag">Git</span>
+                                <span class="cv-skill-tag">Spring</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-briefcase"></i>
+                        Professional Experience
+                    </h2>
+                    <div class="cv-experience-item">
+                        <div class="cv-experience-header">
+                            <h3 class="cv-experience-title">Software Development Intern</h3>
+                            <span class="cv-experience-date">CodeAlpha</span>
+                        </div>
+                        <p class="cv-experience-company">CodeAlpha Internship Program</p>
+                        <div class="cv-experience-desc">
+                            <ul>
+                                <li>Completed various programming tasks and projects demonstrating practical software development skills</li>
+                                <li>Developed a comprehensive Banking System application</li>
+                                <li>Created a responsive Portfolio Website with modern UI/UX</li>
+                                <li>Built responsive web applications using modern technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cv-experience-item">
+                        <div class="cv-experience-header">
+                            <h3 class="cv-experience-title">Full Stack Java Developer</h3>
+                            <span class="cv-experience-date">Internship</span>
+                        </div>
+                        <p class="cv-experience-company">Current Position</p>
+                        <div class="cv-experience-desc">
+                            <ul>
+                                <li>Building enterprise web applications using Java and Spring Framework</li>
+                                <li>Implementing JDBC connectivity with Oracle Database</li>
+                                <li>Creating responsive RESTful APIs for backend services</li>
+                                <li>Developing modern user interfaces with front-end technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cv-experience-item">
+                        <div class="cv-experience-header">
+                            <h3 class="cv-experience-title">Android Developer</h3>
+                            <span class="cv-experience-date">Internship</span>
+                        </div>
+                        <p class="cv-experience-company">Current Position</p>
+                        <div class="cv-experience-desc">
+                            <ul>
+                                <li>Developing native Android applications using Java</li>
+                                <li>Implementing responsive UIs following Material Design principles</li>
+                                <li>Integrating SQLite local database solutions</li>
+                                <li>Ensuring app performance and user experience optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-project-diagram"></i>
+                        Projects
+                    </h2>
+                    <div class="cv-project-grid">
+                        <div class="cv-project-item">
+                            <h3 class="cv-project-title">
+                                <i class="fas fa-globe"></i>
+                                Portfolio Website
+                            </h3>
+                            <p class="cv-project-tech">HTML5, CSS3, JavaScript, Vite</p>
+                            <div class="cv-project-desc">
+                                <ul>
+                                    <li>Responsive personal portfolio website showcasing skills and projects</li>
+                                    <li>Modern glassmorphism design with dark/light mode toggle</li>
+                                    <li>Smooth animations and interactive UI elements</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-project-item">
+                            <h3 class="cv-project-title">
+                                <i class="fas fa-university"></i>
+                                Banking System
+                            </h3>
+                            <p class="cv-project-tech">TypeScript, Node.js, Database</p>
+                            <div class="cv-project-desc">
+                                <ul>
+                                    <li>Comprehensive banking application for CodeAlpha internship</li>
+                                    <li>Account management and transaction features</li>
+                                    <li>Secure authentication system</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-project-item">
+                            <h3 class="cv-project-title">
+                                <i class="fas fa-mobile-alt"></i>
+                                Android Application
+                            </h3>
+                            <p class="cv-project-tech">Java, Android SDK, SQLite</p>
+                            <div class="cv-project-desc">
+                                <ul>
+                                    <li>Native Android mobile application</li>
+                                    <li>Responsive UI with Material Design</li>
+                                    <li>Local database integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-project-item">
+                            <h3 class="cv-project-title">
+                                <i class="fas fa-server"></i>
+                                Full Stack Java Application
+                            </h3>
+                            <p class="cv-project-tech">Java, Spring Framework, JDBC, Oracle</p>
+                            <div class="cv-project-desc">
+                                <ul>
+                                    <li>Enterprise-level web application</li>
+                                    <li>RESTful API development</li>
+                                    <li>Database integration and management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h2>
+                    <div class="cv-education-item">
+                        <h3 class="cv-education-title">B.Tech in Computer Science and Engineering (AIML)</h3>
+                        <p class="cv-education-institution">Currently Pursuing — CSE with Artificial Intelligence & Machine Learning</p>
+                        <div class="cv-education-details">
+                            <ul>
+                                <li>Focus on Software Development and Programming</li>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Web and Mobile Application Development</li>
+                                <li>Database Management Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-trophy"></i>
+                        Certifications & Achievements
+                    </h2>
+                    <div class="cv-achievements-list">
+                        <div class="cv-achievement-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Technical certifications in programming and web development</span>
+                        </div>
+                        <div class="cv-achievement-item">
+                            <i class="fas fa-code"></i>
+                            <span>100+ DSA problems solved on LeetCode</span>
+                        </div>
+                        <div class="cv-achievement-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Completed CodeAlpha internship projects</span>
+                        </div>
+                        <div class="cv-achievement-item">
+                            <i class="fab fa-github"></i>
+                            <span>Active open source contributor on GitHub</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-language"></i>
+                        Languages
+                    </h2>
+                    <div class="cv-languages">
+                        <div class="cv-language-item">
+                            <i class="fas fa-globe"></i>
+                            <span>English (Professional)</span>
+                        </div>
+                        <div class="cv-language-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Hindi (Native)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title">
+                        <i class="fas fa-heart"></i>
+                        Interests
+                    </h2>
+                    <div class="cv-achievements-list">
+                        <div class="cv-achievement-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>Problem Solving & DSA</span>
+                        </div>
+                        <div class="cv-achievement-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Learning New Technologies</span>
+                        </div>
+                        <div class="cv-achievement-item">
+                            <i class="fas fa-building"></i>
+                            <span>Building Scalable Applications</span>
+                        </div>
+                        <div class="cv-achievement-item">
+                            <i class="fab fa-github"></i>
+                            <span>Open Source Contribution</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="cv-footer">
+                <p>References available upon request</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
